@@ -1,0 +1,106 @@
+.page {
+  width: 750px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  width: 361px;
+  margin-top: 107px;
+}
+
+header h1 {
+  color: #fff;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header p {
+  color: #fff;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body::before {
+  content: "";
+
+  width: 100%;
+  height: 465px;
+
+  background: #293241;
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  z-index: -1;
+}
+
+body {
+  background: #bfd7e4;
+}
+
+form {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  width: 750px;
+  min-height: 360px;
+}
+
+.header {
+  width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  border-bottom: 24px;
+}
+
+.top {
+  width: 750px;
+  background: #f67669;
+  border-radius: 8px 8px 0 0;
+  height: 103px;
+
+  margin-bottom: 0;
+  margin-top: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top h1 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 141.667% */
+}
+
+fieldset {
+  border: none;
+}
