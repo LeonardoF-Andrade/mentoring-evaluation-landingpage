@@ -64,8 +64,14 @@ body {
 form {
   background: #fff;
   border-radius: 0 0 8px 8px;
+
   width: 750px;
   min-height: 360px;
+  padding: 32px 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .header {
@@ -83,10 +89,10 @@ img {
   width: 750px;
   background: #f67669;
   border-radius: 8px 8px 0 0;
-  height: 103px;
+  height: 108px;
 
   margin-bottom: 0;
-  margin-top: 32px;
+  margin-top: 28px;
 
   display: flex;
   align-items: center;
@@ -94,6 +100,8 @@ img {
 }
 
 .top h1 {
+  font-family: "Staatliches", sans-serif;
+
   color: #fff;
   font-size: 24px;
   font-style: normal;
@@ -103,4 +111,141 @@ img {
 
 fieldset {
   border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-wrapper,
+.input-texta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  padding: 0 24px;
+  border-radius: 8px;
+  background-color: #fafafc;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+}
+
+.input-wrapper label {
+  color: #4e4958;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 > div {
+  width: 50%;
+}
+
+span {
+  color: #c1bccc;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  margin-left: 8px;
+}
+
+span:hover {
+  color: #423f48;
+}
+
+legend {
+  color: #253b51;
+
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 141.667% */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 8px;
+}
+
+.input-wrapper select {
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  height: 56px;
+  width: 50%;
+  appearance: none;
+  padding: 0 24px;
+}
+
+.input-wrapper textarea {
+  height: 166px;
+}
+
+.input-check {
+  display: flex;
+  gap: 8px;
+}
+
+.input-check label {
+  color: #4e4958;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.input-check input {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.col-3 {
+  display: flex;
+  gap: 32px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.col-32 {
+  display: flex;
+  gap: 10px;
+}
+
+#button {
+  border-radius: 8px;
+
+  background: #f67669;
+
+  padding: 15px 40px;
+  height: 52px;
+
+  border: 1px solid #e6e6f0;
+
+  margin-top: 30px;
+
+  color: #fff;
+  font-family: Staatliches;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
 }
